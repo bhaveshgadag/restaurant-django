@@ -11,9 +11,9 @@
         {% for item in item_list %}
             {% if item.meal_type == meal.0 %}
                 {% if item.status == 0 %}
-                    <del><h4>{{ item.meal }}</h4></del>
+                    <del><h4><a href="{% url 'menu_item' item.pk %}">{{ item.meal }}</a></h4></del>
                 {% else %}
-                    <h4>{{ item.meal }}</h4>
+                    <h4><a href="{% url 'menu_item' item.pk %}">{{ item.meal }}</a></h4>
                 {% endif %}
                 <p>{{ item.description }}</p>
             {% endif %}
