@@ -3,7 +3,7 @@ from .models import Item
 
 
 class MenuItemAdmin(admin.ModelAdmin):
-    list_display = ('meal', 'description')
+    list_display = ('meal', 'description', 'status')
     list_filter = ('status',)
 
 
