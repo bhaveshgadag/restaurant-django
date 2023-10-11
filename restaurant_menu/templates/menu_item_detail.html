@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>{{ item.meal }}</h1>
+<div class="container">
+    <h1 class="">{{ item.meal }}</h1>
     <p>Ingredients: {{ item.description }}</p>
     <p>Price: {{ item.price }}</p>
+</div>
 {% endblock content %}
